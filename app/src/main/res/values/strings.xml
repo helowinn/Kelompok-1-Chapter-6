@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="title_landing_1">Create Your Schedule</string>
+    <string name="title_landing_2">Easily Managed Task</string>
+    <string name="title_landing_3">Ready Start Your Day</string>
+    <string name="desc_landing_1">Make your important schedule at work to make your work easier later</string>
+    <string name="desc_landing_2">you can easily organize your work  and schedule properly so that you are more comfortable while doing work</string>
+    <string name="desc_landing_3">and after all your schedule has been arranged properly and neatly, now you are ready to start the day with fun. enjoy your day </string>
+    <string name="login">Login</string>
+    <string name="create_now">Don’t have account? Create now</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="get_started">Get Started</string>
+    <string name="re_password">Re-Password</string>
+    <string name="email">Email</string>
+    <string name="signup">Sign Up</string>
 </resources>
