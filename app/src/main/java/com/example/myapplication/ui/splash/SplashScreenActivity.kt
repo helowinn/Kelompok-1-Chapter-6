@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.MainActivity
+import com.example.myapplication.ui.main.MainActivity
 import com.example.myapplication.databinding.ActivitySplashBinding
 import com.example.myapplication.ui.landing.LandingPageActivity
 

@@ -143,7 +143,7 @@
             android:id="@+id/taskEvent"
             tools:ignore="MissingPrefix" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/addTask"
