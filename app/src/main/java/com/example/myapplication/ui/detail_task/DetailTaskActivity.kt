@@ -17,6 +17,7 @@ import com.example.myapplication.ui.task.TaskActivity
 import java.text.SimpleDateFormat
 import java.util.*
 
+@Suppress("DEPRECATION")
 class DetailTaskActivity : AppCompatActivity(), View.OnClickListener, DetailTaskView {
 
     private val binding: ActivityDetailTaskBinding by lazy {
@@ -85,6 +86,8 @@ class DetailTaskActivity : AppCompatActivity(), View.OnClickListener, DetailTask
             }
             R.id.btn_complete -> {
                 presenter?.updateFinished(id)
+            } R.id.img_back -> {
+                onBackPressed()
             }
             R.id.btn_update -> {
                 startActivity(

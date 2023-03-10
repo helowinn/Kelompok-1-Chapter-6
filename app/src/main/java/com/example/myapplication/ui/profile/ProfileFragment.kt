@@ -39,7 +39,6 @@ class ProfileFragment : Fragment(),ProfileView {
             val intent = Intent(activity, DetailProfileActivity::class.java)
                 .putExtra("username",SharedPref.username)
             startActivity(intent)
-            activity?.finish()
         }
 
         binding.linLogout.setOnClickListener {
