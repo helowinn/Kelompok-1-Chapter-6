@@ -15,11 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        app:dotsColor="@color/purple_200"
+        app:dotsColor="@color/green"
         app:dotsCornerRadius="8dp"
         app:dotsSize="12dp"
         app:dotsSpacing="4dp"
-        app:dotsStrokeColor="@color/purple_200"
+        app:dotsStrokeColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

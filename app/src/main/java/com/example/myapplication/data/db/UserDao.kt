@@ -2,7 +2,8 @@ package com.example.myapplication.data.db
 
 import androidx.room.*
 import androidx.room.OnConflictStrategy.Companion.REPLACE
-import com.example.taskmate.data.model.User
+import com.example.myapplication.data.model.Task
+import com.example.myapplication.data.model.User
 
 @Dao
 interface UserDao {

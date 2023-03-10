@@ -32,6 +32,7 @@ class LandingPage3Fragment : Fragment() {
         binding.btnStarted.setOnClickListener {
             val intent = Intent(activity, LoginActivity::class.java)
             startActivity(intent)
+            activity?.finish()
         }
     }
 

@@ -1,4 +1,4 @@
-package com.example.taskmate.data.model
+package com.example.myapplication.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

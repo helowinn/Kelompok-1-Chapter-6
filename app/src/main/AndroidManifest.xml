@@ -27,8 +27,10 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/Theme.Fab_Bottom_app_bar" />
+        <activity android:name=".ui.task.TaskActivity"
+            android:exported="true"/>
         <activity
-            android:name=".ui.detail_profile.DetailProfileActivity"
+            android:name=".ui.profile.DetailProfileActivity"
             android:exported="false" />
         <activity
             android:name=".ui.detail_task.DetailTaskActivity"

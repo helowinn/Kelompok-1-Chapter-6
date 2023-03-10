@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Task Mate</string>
     <string name="title_landing_1">Create Your Schedule</string>
     <string name="title_landing_2">Easily Managed Task</string>
     <string name="title_landing_3">Ready Start Your Day</string>
@@ -14,4 +14,7 @@
     <string name="re_password">Re-Password</string>
     <string name="email">Email</string>
     <string name="signup">Sign Up</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="event">Event</string>
 </resources>

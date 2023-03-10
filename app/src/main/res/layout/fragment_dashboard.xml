@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingRight="20dp"
     android:orientation="vertical"
     android:paddingLeft="20dp">
@@ -14,27 +15,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello"
-                android:layout_marginTop="20dp"
-                android:textSize="18sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="All tasks"
+                android:text="Dashboard"
                 android:textStyle="bold"
                 android:textSize="28sp"
                 tools:ignore="MissingPrefix" />
 
         </LinearLayout>
-
-
     </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="1dp"/>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,13 +48,17 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
+                app:lottie_rawRes="@raw/img_notes"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
                 android:id="@+id/noDataImage"
-                android:layout_gravity="center"/>
+                android:visibility="gone"
+                android:layout_gravity="center" />
 
-            <androidx.recyclerview.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:listitem="@layout/item_task"
