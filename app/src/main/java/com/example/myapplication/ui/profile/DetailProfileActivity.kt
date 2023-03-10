@@ -10,6 +10,7 @@ import com.example.myapplication.data.model.User
 import com.example.myapplication.databinding.ActivityDetailProfileBinding
 import com.example.myapplication.ui.login.LoginActivity
 
+@Suppress("DEPRECATION")
 class DetailProfileActivity : AppCompatActivity(),ProfileView {
 
     private val binding : ActivityDetailProfileBinding by lazy{
@@ -31,6 +32,10 @@ class DetailProfileActivity : AppCompatActivity(),ProfileView {
             val password = binding.inpPassword
             val email = binding.inpEmail
             (presenter as ProfilePresenterImp)?.updateUser(SharedPref.id!!,username.text.toString(),password.text.toString(),email.text.toString())
+        }
+
+        binding.imgBack.setOnClickListener {
+            onBackPressed()
         }
     }
 
