@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingRight="20dp"
     android:orientation="vertical"
     android:paddingLeft="20dp">
@@ -47,11 +48,16 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
+                app:lottie_rawRes="@raw/img_empty"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
                 android:id="@+id/noDataImage"
-                android:layout_gravity="center"/>
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"

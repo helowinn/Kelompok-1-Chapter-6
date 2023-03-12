@@ -73,9 +73,12 @@ class DashboardFragment : Fragment(),DashboardView{
     }
 
     override fun onSuccess(database: List<Task>) {
-        adapterDashboard.setData(database)
+        if (database.isEmpty()) {
+            binding.noDataImage.visibility = View.VISIBLE
+        } else {
+            adapterDashboard.setData(database)
+        }
     }
-
     override fun onError(msg: String) {
         TODO("Not yet implemented")
     }
