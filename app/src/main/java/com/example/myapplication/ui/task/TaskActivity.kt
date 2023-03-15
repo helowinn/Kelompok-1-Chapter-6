@@ -75,7 +75,7 @@ class TaskActivity : AppCompatActivity(), TaskView, View.OnClickListener {
         binding.taskDate.setOnClickListener(this)
         binding.taskTime.setOnClickListener(this)
         binding.addTask.setOnClickListener(this)
-        binding.imgBack.setOnClickListener(this)
+
     }
 
     private fun setListener() {
