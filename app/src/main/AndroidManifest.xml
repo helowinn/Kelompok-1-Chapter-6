@@ -23,7 +23,7 @@
         </activity>
         <activity android:name=".ui.landing.LandingPageActivity" />
         <activity android:name=".ui.login.LoginActivity" />
-        <activity android:name=".ui.signup.SignUpActivity" />
+        <activity android:name=".ui.main.signup.SignUpActivity" />
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/Theme.Fab_Bottom_app_bar" />

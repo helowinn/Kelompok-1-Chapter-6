@@ -16,18 +16,18 @@ import com.example.myapplication.ui.detail_task.DetailTaskActivity
 
 class HistoryFragment : Fragment(), HistoryView {
 
-    private var _binding : FragmentHistoryBinding?= null
-    private val binding : FragmentHistoryBinding
-    get() = _binding!!
+    private var _binding: FragmentHistoryBinding? = null
+    private val binding: FragmentHistoryBinding
+        get() = _binding!!
 
-    private var presenter : HistoryPresenter? = null
+    private var presenter: HistoryPresenter? = null
     private lateinit var adapterTask: DashboardAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHistoryBinding.inflate(inflater,container,false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
@@ -40,20 +40,20 @@ class HistoryFragment : Fragment(), HistoryView {
         presenter?.getDataFinished()
     }
 
-    private fun setupRecyclerView(){
+    private fun setupRecyclerView() {
         val recyclerViewTask = binding.taskRecyclerHistory
-        adapterTask = DashboardAdapter(arrayListOf(),object :
+        adapterTask = DashboardAdapter(arrayListOf(), object :
             DashboardAdapter.OnAdapterListener {
             override fun onClick(task: Task) {
                 startActivity(
                     Intent(activity?.applicationContext, DetailTaskActivity::class.java)
-                    .putExtra("id",task.id)
-                    .putExtra("title",task.title)
-                        .putExtra("desc",task.description)
-                        .putExtra("event",task.event)
-                        .putExtra("date",task.date)
-                        .putExtra("time",task.time)
-                    .putExtra("isFinished",task.isFinished)
+                        .putExtra("id", task.id)
+                        .putExtra("title", task.title)
+                        .putExtra("desc", task.description)
+                        .putExtra("event", task.event)
+                        .putExtra("date", task.date)
+                        .putExtra("time", task.time)
+                        .putExtra("isFinished", task.isFinished)
                 )
             }
 
@@ -79,6 +79,12 @@ class HistoryFragment : Fragment(), HistoryView {
     }
 
     override fun onSuccess(database: List<Task>) {
-        adapterTask.setData(database)
+        if (database.isEmpty()) {
+            binding.noDataImage.visibility = View.VISIBLE
+        } else {
+
+
+            adapterTask.setData(database)
+        }
     }
 }

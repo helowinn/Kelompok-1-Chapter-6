@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.ui.main.MainActivity
 import com.example.myapplication.databinding.ActivityLoginBinding
-import com.example.myapplication.ui.signup.SignUpActivity
+import com.example.myapplication.ui.main.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity(), LoginView {
     private var presenter : LoginPresenter? = null
